@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.over{
+  height: 100vh;
+  width: 100vw;
+  background-color: #03001C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thermometer{
+  border-radius: 50%;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 0 9px 0 #03001C;
+  aspect-ratio: 1/1;
+}
+
+.Zna4 {
+  font-size: 50px;
+  color: #03001C;
+}
+
+.Knopki{
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  }
+
+.plus,.minus {
+    height: 100%;
+    margin: 0 20px;
+    border-radius: 50%;
+    border: none;
+    font-size: 300%;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+}
+
+.plus {
+  background-color: #EB455F;
+  box-shadow: 0 0 5px 0 #03001C;
+}
+
+.minus{
+  background-color: #0079FF;
+  box-shadow: 0 0 5px 0 #03001C;
+}
+
+@media only screen and (min-width: 850px){
+
+.plus:hover{
+  background-color: #03001C;
+  color: #EB455F;
+  box-shadow: 0 0 5px 1px #EB455F;
+  transition: all 0.4s ease-out;
+}
+
+.minus:hover{
+  background-color: #03001C;
+  color: #0079FF;
+  box-shadow: 0 0 5px 1px #0079FF;
+  transition: all 0.4s ease-out;
+}
+}
+
+.plus:active {
+  box-shadow: inset 0 0 5px 1px #EB455F;
+  background-color: #03001C;
+  color: #EB455F;
+}
+
+.minus:active {
+  box-shadow: inset 0 0 5px 1px #0079FF;
+  background-color: #03001C;
+  color: #0079FF;
+}
